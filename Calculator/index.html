@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <title>Document</title>
+</head>
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7 border border-dark mt-5 offset-3 rounded">
+       <div class="col-md-12 border pt-3 pb-3 o rounded my-2">
+        <div class="col-md-9 offset-1  "><input type="text"  class="form-control display  btn-outline-dark border-dark" placeholder="0">
+        </div>
+        <div class="offset-1">
+          <div>
+            <input type="button" class="btn clc btn-info px-5 mt-3"  value="7" onclick="insrt(7)"></input>
+            <input type="button" class="btn clc btn-info px-5 mt-3"  value="8" onclick="insrt(8)"></input>
+            <input type="button" class="btn btn-info px-5 mt-3 clc"  value="9" onclick="insrt(9)"></input>
+            <input type="button" class="btn btn-info px-5 mt-3 bg-dark clc"  value="*" onclick="insrt('*')">  </input>
+           </div>
+  
+           <div>
+            <input type="button" class="btn btn-info px-5 mt-3 clc"  value="4" onclick="insrt(4)"></input>
+            <input type="button" class="btn btn-info px-5 mt-3 clc" " value="5" onclick="insrt(5)"></input>
+            <input type="button" class="btn btn-info px-5 mt-3 clc"  value="6" onclick="insrt(6)"></input>
+            <input type="button" class="btn btn-info px-5 mt-3 bg-dark math"  value="-" onclick="insrt('-')"></input>
+           </div>
+  
+           <div>
+            <input type="button" class="btn btn-info px-5 mt-3 clc"  value="1" onclick="insrt(1)"></input>
+            <input type="button" class="btn btn-info px-5 mt-3 clc" value="2"onclick="insrt(2)"></input>
+            <input type="button" class="btn btn-info px-5 mt-3 clc"  value="3" onclick="insrt(3)"></input>
+            <input type="button" class="btn btn-info px-5 mt-3 bg-dark math"  value="+" onclick="insrt('+')"></input>
+           </div>
+  
+           <div>
+            <input type="button" class="btn btn-info px-5 mt-3 clc" " value="0" onclick="insrt('0')"></input>
+
+            <input type="button" class="btn btn-info px-5 mt-3 bg-dark" id="clear" value="C" onclick="clr()"></input>
+
+            <input type="button" class="btn btn-info px-5 mt-3 bg-dark" id="finalresult" value="=" onclick="sql()"></input>
+            <input type="button" class="btn btn-info px-5 mt-3 bg-dark math" " value="/" onclick="insrt('/')">  </input>
+            
+           </div>
+
+        </div>
+
+        
+       
+       </div>
+      </div>
+    </div>
+  </div>
+  <script src="./js/jQuery.min.js"></script>
+  <script src="./js/popper.js"></script>
+  <script src="./js/bootstrap.js"></script>
+  <script src="./main.js"></script>
+</body>
+</html>
